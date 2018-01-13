@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Events</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<script type="text/javascript" src="/javascripts/events.js"></script>
+
+</head>
+<body>
+	<div class="header">
+		<h4>Events App</h4>
+	</div>
+	<!-- <div class="col-md-3"></div> -->
+	<div class="container">
+	<div class="table-responsive-md">
+	  <table class="table">
+	    <thead>
+      <tr>
+        <th class="col-md-9">Title</th>
+        <th class="col-md-1">Going</th>
+        <th class="col-md-2">Not going</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#" data-toggle="modal" data-target="#event1" height="175px" width="80%">Sales Marketing</a><span class="dateSpan">date</span></td>
+        <td><a href="/y">Y</a></td>
+        <td><a href="/n">N</a></td>
+      </tr>
+       <tr>
+        <td>Sales Marketing</td>
+        <td><a href="/y">Y</a></td>
+        <td><a href="/n">N</a></td>
+      </tr>
+    </tbody>
+	  </table>
+	</div>
+		 <div class="modal fade" id="event1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Sales Marketing</h4>
+                </div>
+                <div class="modal-body">
+                    <%= description %>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- <div class="col-md-3"></div> -->
+</body>
+</html>

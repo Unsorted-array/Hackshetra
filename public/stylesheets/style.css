@@ -46,3 +46,12 @@ h2, h3, h4, h5{
     margin-right: auto;
     padding-top: 10px;
 }
+.dateSpan{
+    font-size: 10px;
+    font-style: italic;
+    color: grey;
+}
+#myModalLabel {
+    text-align: center;
+
+}
