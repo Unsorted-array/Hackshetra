@@ -6,11 +6,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+// var users = require('./routes/users');
 var organiserDashboard = require('./routes/organiserDashboard');
 var createEvent = require('./routes/createEvent');
-var mongo = require('./routes/mongo');
+// var mongo = require('./routes/mongo');
 var dashboard = require('./routes/dashboard');
+var register = require('./routes/register');
+var login = require('./routes/login');
 var app = express();
 
 // view engine setup
@@ -27,12 +29,14 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+// app.use('/users', users);
 app.use('/organiserDashboard', organiserDashboard);
 app.use('/createEvent', createEvent);
 
-app.use('/mongo', mongo);
+// app.use('/mongo', mongo);
 app.use('/dashboard', dashboard);
+app.use('/register', register);
+app.use('/login', login);
 
 
 // catch 404 and forward to error handler
