@@ -84,3 +84,14 @@ This will work on the branch - “atendee-app-web” (localhost:3000/events)
 
 It shows all the details of the event clicked in the table. 
 ![alt text](https://github.com/chhavi02/Hackshetra/blob/master/screenshots/Screenshot-2018-1-14%20EventsModal.png)
+
+
+### AFTER ORGANISER LOGGEDIN
+
+It shows the login page
+![alt text](https://github.com/chhavi02/Hackshetra/blob/master/screenshots/Screenshot%20(2).png)
+
+### AFTER LOGOUT
+
+It shows the login page
+![alt text](https://github.com/chhavi02/Hackshetra/blob/master/screenshots/Screenshot%20(3).png)
