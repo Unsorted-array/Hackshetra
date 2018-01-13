@@ -13,6 +13,7 @@ var createEvent = require('./routes/createEvent');
 var dashboard = require('./routes/dashboard');
 var register = require('./routes/register');
 var login = require('./routes/login');
+var index2 = require('./routes/index2');
 var app = express();
 
 // view engine setup
@@ -37,6 +38,7 @@ app.use('/createEvent', createEvent);
 app.use('/dashboard', dashboard);
 app.use('/register', register);
 app.use('/login', login);
+app.use('/index2', index2);
 
 
 // catch 404 and forward to error handler
