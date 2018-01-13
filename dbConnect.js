@@ -4,8 +4,8 @@ var credentials = {
 	host: 'localhost',
 	port: 5432,
 	database: 'event',
-	user: 'chhavi',
-	password: 'coderNo.12'
+	user: 'YOUR_DATABASE_USER',
+	password: 'YOUR_DATABASE_PASSWORD'
 };
 
 var db = pgp(credentials);
