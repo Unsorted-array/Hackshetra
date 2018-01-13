@@ -28,6 +28,8 @@ Clone the atendee-app-web branch
 
 `$npm start` to run on port 3000. The attendee app runs on localhost:3000
 
+___
+
 
 ### HOME PAGE
 
