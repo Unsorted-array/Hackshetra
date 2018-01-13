@@ -4,7 +4,9 @@ var router = express.Router();
 var loginController = require('../controllers/login');
 
 router.get('/', function(req, res) {
-	res.render('login');
+	console.log('yahaj aa gaye');
+	// res.render('login');
+	res.redirect('http://localhost:3001');
 });
 
 router.post('/', loginController.login);

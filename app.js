@@ -5,11 +5,16 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
+var flash = require('connect-flash');
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+var expressValidator = require('express-validator');
+var ejs = require('ejs');
 
 var config = require('./config');
 
 var index = require('./routes/index');
-// var users = require('./routes/users');
+var users = require('./routes/users');
 var organiserDashboard = require('./routes/organiserDashboard');
 var createEvent = require('./routes/createEvent');
 // var mongo = require('./routes/mongo');
@@ -21,8 +26,9 @@ var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.engine('html', require('ejs').renderFile);
+app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'html');
+
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -38,8 +44,17 @@ app.use(session({
     saveUninitialized: true
 }));
 
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use(expressValidator());
+
+app.use(flash());
+
+
 app.use('/', index);
-// app.use('/users', users);
+app.use('/users', users);
 app.use('/organiserDashboard', organiserDashboard);
 app.use('/createEvent', createEvent);
 
