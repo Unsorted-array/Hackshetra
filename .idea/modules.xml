@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/HackShetra.iml" filepath="$PROJECT_DIR$/.idea/HackShetra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/NodeJSPassportAuth.iml" filepath="$PROJECT_DIR$/.idea/NodeJSPassportAuth.iml" />
     </modules>
   </component>
 </project>
